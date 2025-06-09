@@ -1,0 +1,6 @@
+# ignore node_modules both in client and server folders
+server/node_modules/
+client/node_modules/
+
+# ignore all node_modules, in case there are other folders that contain node modules
+**/node_modules/

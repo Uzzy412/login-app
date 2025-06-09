@@ -1,0 +1,123 @@
+:root {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(240, 91%, 10%);
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: clip;
+}
+
+input {
+  font-family: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  white-space: nowrap;
+  gap: 1em;
+  padding: 1em;
+  text-align: center;
+  font-size: clamp(.75rem, 1rem + 1vw, 1.5rem);
+
+  img {
+    width: 25%;
+    max-width: 100px;
+    aspect-ratio: 1 / 1;
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  input {
+    width: 100%;
+    max-width: 20em;
+    padding: .25em 1em;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 300ms;
+
+  }
+
+  input:focus,
+  input:hover {
+    box-shadow: 0 5px 15px 1px hsl(30, 92%, 55%);
+  }
+}
+
+.login-btn {
+  margin-top: 1em;
+  padding: .25em 1.5em;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.login-btn:hover,
+.login-btn:focus {
+  box-shadow: 0 5px 15px 1px hsl(30, 92%, 48%);
+}
+
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 3em;
+}
+
+.signup-btn {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+.status {
+  height: 20px;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.error-status {
+  color: hsl(0, 100%, 50%);
+}
+
+.ok-status {
+  color: hsl(120, 97%, 45%);
+}
+
+.greeting {
+  text-align: center;
+}
+
+.logout-btn {
+  display: block;
+  width: 10em;
+  margin-inline: auto;
+  font-size: 1rem;
+}
