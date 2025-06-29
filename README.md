@@ -1,4 +1,4 @@
-# jwt-practice-app
+# LOGIN APP
 
 Didn't intend to be a real app.
 
